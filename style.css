@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.tela {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+#tela-inicial {
+    background: url('https://s2-globo-play.glbimg.com/NfvVXMVUT_OfWSeC8J5QJ1WS45Q=/0x1080/filters:quality(100)/https://s2-globo-play.glbimg.com/8nF9-ABnwG8x6LDj8_bBhBxtwLE=/https://i.s3.glbimg.com/v1/AUTH_c3c606ff68e7478091d1ca496f9c5625/internal_photos/bs/2024/Q/4/gemAxDSQ60DTnlaz22aQ/tvg-imageonair-direita.jpg') no-repeat center center/cover;
+}
+
+#tela-jogo {
+    background: #1a1a2e;
+}
+
+#tela-resultado {
+    background-size: cover;
+}
+
+.escondido {
+    display: none !important;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+}
+
+button {
+    background: #f1c40f;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #e67e22;
+    transform: scale(1.05);
+}
+
+.input-personagem {
+    margin: 10px;
+    padding: 8px;
+    width: 80%;
+}
+
+/* Classes para os resultados */
+.vitoria {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://previews.123rf.com/images/dzein/dzein2008/dzein200800013/152851015-emoji-smiley-personagem-vector-fundo-emoji-sorridente-de-sorriso-engra%C3%A7ado-e-express%C3%B5es-faciais.jpg');
+}
+
+.derrota {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://s2.glbimg.com/sgMDBRW0qmnahjavF70l_PH6s18G7yJ-Csq0A9wLVINIoz-HdGixxa_8qOZvMp3w/e.glbimg.com/og/ed/f/original/2013/11/05/vilasok.jpg');
+}
+
+.empate {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://example.com/background-empate.jpg');
+}
